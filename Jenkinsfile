@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage {'Build'}{
+    stage ('Build'){
       steps {
         echo 'running build automation'
         sh './gradelew build --no-daemon'
